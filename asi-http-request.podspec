@@ -1,12 +1,10 @@
 Pod::Spec.new do |s|
   s.name     = 'ASIHTTPRequest'
   s.version  = '1.8.1'
-  s.summary  = 'Easy to use CFNetwork wrapper for HTTP requests, Objective-C,
-Mac OS X and iPhone.'
+  s.summary  = 'Easy to use CFNetwork wrapper for HTTP requests, Objective-C, Mac OS X and iPhone.'
   s.homepage = 'http://allseeing-i.com/ASIHTTPRequest'
   s.author   = { 'Ben Copsey' => 'ben@allseeing-i.com' }
-  s.source   = { :git => 'https://github.com/chaione/asi-http-request.git', :tag
-=> 'v1.8.1' }
+  s.source   = { :git => 'https://github.com/chaione/asi-http-request.git', :tag => 'v1.8.1' }
 
   s.description = %{
     ASIHTTPRequest is an easy to use wrapper around the CFNetwork API that
@@ -27,8 +25,7 @@ Mac OS X and iPhone.'
     s.source_files = 'Classes'
     s.frameworks   = 'MobileCoreServices', 'CFNetwork', 'CoreGraphics'
   else
-    s.source_files =
-FileList['Classes/*.*'].exclude(/ASIAuthenticationDialog\.\w$/)
+    s.source_files = FileList['Classes/*.*'].exclude(/ASIAuthenticationDialog\.\w$/)
     s.frameworks   = 'SystemConfiguration', 'CoreServices'
   end
 
