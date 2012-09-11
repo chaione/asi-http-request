@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
   s.osx.source_files = FileList['Classes/*.*'].exclude(/ASIAuthenticationDialog\.\w$/)
   s.osx.frameworks   = 'SystemConfiguration', 'CoreServices'
 
-
+  s.license = 'New BSD License'
   s.library    = 'z.1'
 end
